@@ -25,10 +25,3 @@ table,th,td{
 .derecha .regcartas > form > .campotext{
     width: 100%;
 }
-
-@media screen and (max-width: 1300px){
-    .contenedor{
-            background: black;
-            grid-template-columns: 100%;
-    }
-}

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/gridIndex.css">
+    <script type="text/javascript" src="js/script.js"></script>
     <title>Mazo de Cartas</title>
 </head>
 <body>
@@ -15,51 +17,47 @@
 
     <div class="contenedor">
         <div class="cartas">
-            <button><img src="img/a.png" alt=""></button>
-            <button><img src="img/dos.jpg" alt=""></button>
-            <button><img src="img/tres.jpg" alt=""></button>
-            <button><img src="img/cuatro.jpg" alt=""></button>
-            <button><img src="img/cinco.jpg" alt=""></button>
-            <button><img src="img/seis.jpg" alt=""></button>
-            <button><img src="img/siete.jpg" alt=""></button>
-            <button><img src="img/ocho.jpg" alt=""></button>
-            <button><img src="img/nueve.jpg" alt=""></button>
-            <button><img src="img/diez.jpg" alt=""></button>
-            <button><img src="img/j.png" alt=""></button>
-            <button><img src="img/q.png" alt=""></button>
-            <button><img src="img/k.jpg" alt=""></button>
+            <button><img src="img/1.png" alt=""></button>
+            <button><img src="img/2.png" alt=""></button>
+            <button><img src="img/3.png" alt=""></button>
+            <button><img src="img/4.png" alt=""></button>
+            <button><img src="img/5.png" alt=""></button>
+            <button><img src="img/6.png" alt=""></button>
+            <button><img src="img/7.png" alt=""></button>
+            <button><img src="img/8.png" alt=""></button>
+            <button><img src="img/9.png" alt=""></button>
+            <button><img src="img/10.png" alt=""></button>
+            <button><img src="img/11.png" alt=""></button>
+            <button><img src="img/12.png" alt=""></button>
+            <button><img src="img/13.png" alt=""></button>
         </div>
         <div class="derecha">
             <div class="tablita">
                 <table class="tabla">
-                    <tr>
-                      <th>#</th>
-                      <th>Carta</th>
-                      <th>Cant</th>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>As de Diamantes</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Dos de Diamantes</td>
-                      <td>3</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Carta</th>
+                            <th>Cant</th>
+                        </tr>
+                    </thead>
+                    <tbody id="res">
+
+                    </tbody>   
                   </table>
             </div>
             <br><br>
             <div class="regcartas">
-                <h2>Registro Cartas</h2>
-                <form>
+                <h4>Registro Cartas</h4>
+                <form action="" id="formulario" method="get">
                     <label for="">Numero:</label><br><br>
-                    <input type="text" maxlength="5" class="campotext"><br><br>
+                    <input type="text" name="numero" class="campotext" id="numero"><br><br>
                     <label for="">Carta:</label><br><br>
-                    <input type="text" maxlength="10" class="campotext"><br><br><br>
-                    <input type="submit" value="Guardar">
+                    <input type="text" name="carta" class="campotext" id="carta"><br><br><br>
+                    <button type="button" class="btn" >Guardar</button>
                 </form>
-            </div>
+            </div><br><br>
+            <button type="submit" class="btn" id="boton" value="enviar">refrescar</button>
         </div>
     </div>
 </body>
